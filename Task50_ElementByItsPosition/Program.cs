@@ -10,7 +10,7 @@ void PrintElementByItsPosition(int[,] array, int rowPosition, int colPosition)
 {
     int rows = array.GetLength(0);
     int columns = array.GetLength(1);
-    if(rowPosition <= rows && colPosition <= columns)
+    if(rowPosition < rows && colPosition < columns)
     {
         System.Console.WriteLine(array[rowPosition, colPosition]);
     }
